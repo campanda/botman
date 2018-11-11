@@ -12,6 +12,10 @@
         {
             "name": "Marcel Pociot",
             "email": "m.pociot@gmail.com"
+        },
+        {
+            "name": "Helmut Hoffer von Ankershoffen",
+            "email": "helmut.hoffer.von.ankershoffen@campanda.com"
         }
     ],
     "require": {
@@ -20,7 +24,7 @@
         "tightenco/collect": "~5.0",
         "opis/closure": "^2.3 || ^3.0",
         "mpociot/pipeline": "^1.0",
-        "react/socket": "~0.4",
+        "react/socket": "^1.1",
         "spatie/macroable": "^1.0",
         "psr/container": "^1.0"
     },

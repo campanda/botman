@@ -2,6 +2,7 @@
 
 namespace BotMan\BotMan;
 
+use Campanda\Core\Kernel\Service\KernelService;
 use Closure;
 use Illuminate\Support\Collection;
 use BotMan\BotMan\Commands\Command;
@@ -121,6 +122,11 @@ class BotMan
     protected $runsOnSocket = false;
 
     /**
+     * @var KernelService
+     */
+    protected $kernelService;
+
+    /**
      * BotMan constructor.
      * @param CacheInterface $cache
      * @param DriverInterface $driver
@@ -180,6 +186,13 @@ class BotMan
     public function setContainer(ContainerInterface $container)
     {
         $this->container = $container;
+    }
+
+    /**
+     * @return ContainerInterface
+     */
+    public function getContainer(): ContainerInterface {
+        return $this->container;
     }
 
     /**
